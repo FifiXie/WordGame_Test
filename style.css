@@ -1,0 +1,51 @@
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #71B3FF;
+    border-color: #71B3FF;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #7AA9FF;
+    border-color: #7AA9FF;
+}
+
+
+#hangmanPic{
+  width: 36% !important; 
+  margin-left: 21% !important;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+/*img{
+display: block;
+width: 50% !important;
+margin: auto !important;
+
+}*/
+
+body{
+
+  font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18pt;
+}
+
+.container {
+  margin-top: 2% !important;
+}
+
+.float-right {
+  margin-bottom: 2% !important;
+}
+
+.rest {
+  margin-top: 3% !important;
+}
+
+.btn-info{
+    background-color: #BFB5FF;
+    border-color: #BFB5FF;
+}
