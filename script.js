@@ -1,6 +1,3 @@
-// var animal_Name = ['Macaw','Iguana','Sea Lion', 'Narwhal', 'Orangutan', 'Plains Bison', 'Sea Turtle', 'Saola', 'Sumatran Elephant', 'Sunda Tiger', 'Whale',
-//                         'Bonobo', 'Chimpanzee', 'Fin Whale', 'Jaguar','Hirola', 'Anoa','Grey Parrot', 'Tapir', 'Dhole', 'Giant Otter']
-
 var categories = [
   ["cat", "dog", "panda", "fox", "elephant", "monkey", "penguin"],
   ["apple", "peach", "pear", "strawberry", "banana", "watermelon"],
@@ -12,14 +9,6 @@ let maxWrong = 11;
 let mistakes = 0;
 let guessed = [];
 let wordStatus = "";
-
-// var showCatagory = document.getElementById("catagoryName");
-// console.log(showCatagory);
-
-// var e = document.getElementById("WordCat");
-// var strUser = e.value;
-
-// var chosenCategory = strUser;
 
 var paragraph = document.getElementById("catagoryName");
 
@@ -46,28 +35,6 @@ function myFunction() {
   guessedWord();
   reset();
 }
-
-// myFunction();
-
-// var selectCat = function () {
-//     if (chosenCategory === categories[0]) {
-//       catagoryName.innerHTML = "The Chosen Category is Animals";
-//     } else if (chosenCategory === categories[1]) {
-//       catagoryName.innerHTML = "The Chosen Category is Friuts";
-//     } else if (chosenCategory === categories[2]) {
-//       catagoryName.innerHTML = "The Chosen Category is Colors";
-//     }
-//   }
-
-// var selectCat = function () {
-//     if (chosenCategory === 0) {
-//       paragraph.textContent += "Animals";;
-//     } else if (chosenCategory === 1) {
-//       paragraph.textContent += "Friuts";
-//     } else if (chosenCategory === 2) {
-//       paragraph.textContent += "Colors";
-//     }
-//   }
 
 function generateButtons() {
   let buttonsHTML = "abcdefghijklmnopqrstuvwxyz"
@@ -154,6 +121,5 @@ function reset() {
 document.getElementById("maxWrong").innerHTML = maxWrong;
 
 myFunction();
-// randomWord();
 generateButtons();
 guessedWord();
