@@ -39,10 +39,12 @@ function myFunction() {
     return answer;
   }
 
+  // guessed = [];
+  // mistakes = 0;
   randomWord();
   console.log(answer);
   guessedWord();
-  // reset();
+  reset();
 }
 
 // myFunction();
@@ -144,8 +146,6 @@ function reset() {
   guessed = [];
   document.getElementById("hangmanPic").src = "images/0.jpg";
 
-  myFunction();
-  // randomWord();
   guessedWord();
   updateMistakes();
   generateButtons();
