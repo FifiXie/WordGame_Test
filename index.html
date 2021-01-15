@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- Bootstrap 4 CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900|Rubik:300,300i,400,400i,500,500i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap 4 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900|Rubik:300,300i,400,400i,500,500i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <title>Snowman</title>
-</head>
-<body>
-<div class="container">
-  <h1 class="text-center">Snowman</h1>
-  <select id="WordCat" onchange="myFunction()">
-  <option value="0">Animals</option>
-  <option value="1" >Friuts</option>
-  <option value="2">Colors</option>
-</select>
-  <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
-  <div class="text-center">
-    <img id='hangmanPic' src="./images/0.jpg" alt="">
-    <!-- <p>Guess the Endanger Animal Here:</p> -->
-    <p id="catagoryName"> </p>
-    <p id="wordSpotlight">The word to be guessed goes here</p>
-    <div id="keyboard"></div>
-    <button class="rest btn btn-info" onClick="reset()">Reset</button>
-  </div> 
-  <br>
+    <title>Snowman</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Snowman</h1>
+      <select id="WordCat" onchange="myFunction()">
+        <option value="0">Animals</option>
+        <option value="1">Friuts</option>
+        <option value="2">Colors</option>
+      </select>
+      <div class="float-right">
+        Wrong Guesses: <span id="mistakes">0</span> of
+        <span id="maxWrong"></span>
+      </div>
+      <div class="text-center">
+        <img id="hangmanPic" src="./images/0.jpg" alt="" />
+        <!-- <p>Guess the Endanger Animal Here:</p> -->
+        <p id="catagoryName"></p>
+        <p id="wordSpotlight">The word to be guessed goes here</p>
+        <div id="keyboard"></div>
+        <button class="rest btn btn-info" onClick="reset()">Reset</button>
+      </div>
+      <br />
+    </div>
 
-  
-
-</div>
-
-
-
-<script type="text/javascript" src="script.js"></script>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
